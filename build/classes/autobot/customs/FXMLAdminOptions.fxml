@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="adminOptionsAnchor" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autobot.customs.FXMLProductSelectionController">
+   <children>
+      <Label layoutX="62.0" layoutY="14.0" text="Administrator Options">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <GridPane layoutX="69.0" layoutY="103.0" prefHeight="194.0" prefWidth="163.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="displayAllProductsButton" mnemonicParsing="false" onAction="#handleAdminOptions" text="Display All Products" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />            
+            <Button fx:id="editProductButton" mnemonicParsing="false" onAction="#handleAdminOptions" text="Edit Product" GridPane.halignment="CENTER" GridPane.rowIndex="2" />            
+         </children>
+      </GridPane>
+      <ImageView fx:id="imageView1" fitHeight="1.0" fitWidth="1.0" layoutX="238.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autobot.customs.FXMLCheckoutController">
+   <children>
+      <GridPane layoutY="-1.0" prefHeight="60.0" prefWidth="914.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="485.0" minWidth="10.0" prefWidth="464.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.0" minWidth="10.0" prefWidth="450.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="192.0" minHeight="0.0" prefHeight="9.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Please Enter Personal Information" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label text="Your Order:" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label layoutX="14.0" layoutY="59.0" text="First Name" />
+      <TextField fx:id="firstNameField" layoutX="14.0" layoutY="80.0" />
+      <TextField fx:id="lastNameField" layoutX="246.0" layoutY="80.0" />
+      <Label layoutX="246.0" layoutY="59.0" text="Last Name" />
+      <TextField fx:id="addressField" layoutX="14.0" layoutY="144.0" />
+      <Label layoutX="14.0" layoutY="123.0" text="Billing Address" />
+      <Label layoutX="246.0" layoutY="123.0" text="City" />
+      <TextField fx:id="cityField" layoutX="246.0" layoutY="144.0" />
+      <Label layoutX="14.0" layoutY="187.0" text="State" />
+      <TextField fx:id="zipCodeField" layoutX="121.0" layoutY="208.0" prefHeight="31.0" prefWidth="80.0" />
+      <TextField fx:id="phoneNumberField" layoutX="246.0" layoutY="208.0" />
+      <Label layoutX="246.0" layoutY="187.0" text="Phone Number" />
+      <Label layoutX="132.0" layoutY="187.0" text="Zip Code" />
+      <GridPane layoutX="14.0" layoutY="255.0" prefHeight="60.0" prefWidth="448.0">
+         <children>
+            <Label text="Please Enter Billing Information" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="192.0" minHeight="0.0" prefHeight="9.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="14.0" layoutY="438.0" text="Expiration Date &amp; Security Code" />
+      <Label layoutX="14.0" layoutY="374.0" text="Card Number" />
+      <TextField fx:id="cardNumberField" layoutX="14.0" layoutY="395.0" />
+      <Label layoutX="14.0" layoutY="310.0" text="Payment Method" />
+      <Button fx:id="confirmCheckoutButton" disable="true" layoutX="741.0" layoutY="521.0" mnemonicParsing="false" onAction="#confirmCheckout" prefHeight="65.0" prefWidth="173.0" text="Confirm Checkout" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="741.0" AnchorPane.rightAnchor="22.0" />
+      <Button fx:id="returnToCartButton" layoutX="11.0" layoutY="555.0" mnemonicParsing="false" onAction="#returnToCart" text="Return to Cart" />
+      <Button fx:id="validateButton" layoutX="272.0" layoutY="523.0" mnemonicParsing="false" onAction="#validate" prefHeight="65.0" prefWidth="178.0" text="Validate Information" />
+      <Button fx:id="editInfoButton" layoutX="555.0" layoutY="521.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="178.0" text="Edit Information" visible="false" />
+      <ComboBox fx:id="stateField" layoutX="11.0" layoutY="208.0" prefHeight="31.0" prefWidth="90.0">
+          <items>
+          <FXCollections fx:factory="observableArrayList">
+            <String fx:value="AL" />
+            <String fx:value="AK" />
+            <String fx:value="AZ" />
+            <String fx:value="AR" />
+            <String fx:value="CA" />
+            <String fx:value="CO" />
+            <String fx:value="CT" />
+            <String fx:value="DE" />
+            <String fx:value="DC" />
+            <String fx:value="FL" />
+            <String fx:value="GA" />
+            <String fx:value="HI" />
+            <String fx:value="ID" />
+            <String fx:value="IL" />
+            <String fx:value="IN" />
+            <String fx:value="IA" />
+            <String fx:value="KS" />
+            <String fx:value="KY" />
+            <String fx:value="LA" />
+            <String fx:value="ME" />
+            <String fx:value="MD" />
+            <String fx:value="MA" />
+            <String fx:value="MI" />
+            <String fx:value="MN" />
+            <String fx:value="MS" />
+            <String fx:value="MO" />
+            <String fx:value="MT" />
+            <String fx:value="NE" />
+            <String fx:value="NV" />
+            <String fx:value="NH" />
+            <String fx:value="NJ" />
+            <String fx:value="NM" />
+            <String fx:value="NY" />
+            <String fx:value="NC" />
+            <String fx:value="ND" />
+            <String fx:value="OH" />
+            <String fx:value="OK" />
+            <String fx:value="OR" />
+            <String fx:value="PA" />
+            <String fx:value="RI" />
+            <String fx:value="SC" />
+            <String fx:value="SD" />
+            <String fx:value="TN" />
+            <String fx:value="TX" />
+            <String fx:value="UT" />
+            <String fx:value="VT" />
+            <String fx:value="VA" />
+            <String fx:value="WA" />
+            <String fx:value="WV" />
+            <String fx:value="WI" />
+            <String fx:value="WY" />
+          </FXCollections>   
+          </items>
+      </ComboBox>
+      <ComboBox fx:id="expMonthField" layoutX="14.0" layoutY="459.0" prefHeight="31.0" prefWidth="80.0" promptText="MM">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="1" />
+                <String fx:value="2" />
+                <String fx:value="3" />
+                <String fx:value="4" />
+                <String fx:value="5" />
+                <String fx:value="6" />
+                <String fx:value="7" />
+                <String fx:value="8" />
+                <String fx:value="9" />
+                <String fx:value="10" />
+                <String fx:value="11" />
+                <String fx:value="12" />
+        </FXCollections>
+        </items>
+      </ComboBox>
+      <ComboBox fx:id="expYearField" layoutX="95.0" layoutY="459.0" prefHeight="31.0" prefWidth="80.0" promptText="YY">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="15" />
+                <String fx:value="16" />
+                <String fx:value="17" />
+                <String fx:value="18" />
+                <String fx:value="19" />
+                <String fx:value="20" />
+                <String fx:value="21" />
+                <String fx:value="22" />
+                <String fx:value="23" />
+                <String fx:value="24" />
+                <String fx:value="25" />
+                <String fx:value="26" />
+        </FXCollections>
+        </items>
+      </ComboBox>
+      <ComboBox fx:id="paymentMethodField" layoutX="14.0" layoutY="331.0" prefHeight="31.0" prefWidth="187.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Visa" />
+                <String fx:value="Mastercard" />
+                <String fx:value="Discover" />
+                <String fx:value="American Express" />
+        </FXCollections>
+        </items>
+      </ComboBox>
+      <Line endX="100.0" layoutX="464.0" layoutY="255.0" rotate="90.0" scaleX="3.0" startX="-100.0" translateY="45.0" />
+      <TextArea fx:id="cartTextArea" layoutX="474.0" layoutY="47.0" prefHeight="190.0" prefWidth="425.0" />
+      <TextArea fx:id="personalTextArea" layoutX="475.0" layoutY="316.0" prefHeight="190.0" prefWidth="425.0" />
+      <Button fx:id="setCartTextAreaButton" layoutX="748.0" layoutY="239.0" mnemonicParsing="false" onAction="#setCartTextArea" prefHeight="65.0" prefWidth="136.0" text="Show Order" />
+      <PasswordField fx:id="secCodeField" layoutX="188.0" layoutY="459.0" prefHeight="31.0" prefWidth="48.0" />
+   </children>
+</AnchorPane>

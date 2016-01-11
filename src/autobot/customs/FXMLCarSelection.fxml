@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autobot.customs.FXMLCarSelectionController">
+   <children>
+      <Label alignment="CENTER" layoutX="322.0" layoutY="85.0" prefHeight="72.0" prefWidth="257.0" text="Project by Autobots Inc.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="296.0" layoutY="14.0" prefHeight="87.0" prefWidth="309.0" text="Autobot Customs">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="car1btn" alignment="CENTER" contentDisplay="CENTER" layoutX="695.0" layoutY="453.0" mnemonicParsing="false" onAction="#selectCar" prefHeight="133.0" prefWidth="191.0" text="ENTER">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Label fx:id="namesLabel" layoutX="390.0" layoutY="470.0" prefHeight="21.0" prefWidth="120.0" />
+      <VBox layoutX="14.0" layoutY="433.0" prefHeight="153.0" prefWidth="257.0">
+         <children>
+            <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="191.0" text="Shakib Ahmed">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="246.0" text="Mohammed Assaduzzaman">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="191.0" text="Imad Baber">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="191.0" text="Tremaine Davis">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="191.0" text="Rafay Syed">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fx:id="logoImageView" fitHeight="258.0" fitWidth="324.0" layoutX="288.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="306.0" layoutY="443.0" text="Too fast, too affordable">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane id="AnchorPane" fx:id="productAnchor" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autobot.customs.FXMLProductSelectionController">    
+    <children>       
+      <Button fx:id="returnButton" layoutX="14.0" layoutY="555.0" mnemonicParsing="false" onAction="#returnToCarSelection" text="Return to Car Selection" />
+      <GridPane layoutX="15.0" layoutY="84.0" prefHeight="408.0" prefWidth="875.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="454.0" minWidth="10.0" prefWidth="454.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="432.0" minWidth="10.0" prefWidth="421.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="190.0" stroke="BLACK" strokeType="INSIDE" width="402.0" GridPane.halignment="CENTER" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="190.0" stroke="BLACK" strokeType="INSIDE" width="402.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <ImageView fx:id="imageView1" fitHeight="163.0" fitWidth="389.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <ImageView fx:id="imageView2" fitHeight="163.0" fitWidth="389.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+            <TabPane prefHeight="432.0" prefWidth="412.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="tab1" text="Spoilers">
+                  <content>
+                    <AnchorPane fx:id="cat1Anchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                               <ListView fx:id="cat1listView" prefHeight="369.0" prefWidth="454.0" />
+                              
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="tab2" text="Headlights">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="cat2listView" prefHeight="369.0" prefWidth="454.0" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="tab3" text="Rims">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="cat3listView" prefHeight="369.0" prefWidth="454.0" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tab4" text="Paint Color">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="cat4listView" prefHeight="369.0" prefWidth="454.0" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tab5" text="Other">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="cat5istView" prefHeight="369.0" prefWidth="454.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </GridPane>
+      <Button fx:id="loginButton" layoutX="765.0" layoutY="17.0" mnemonicParsing="false" onAction="#openLoginForm" prefHeight="67.0" prefWidth="121.0" text="Login" />
+      <Button fx:id="viewCartButton" layoutX="634.0" layoutY="17.0" mnemonicParsing="false" onAction="#openCart" prefHeight="67.0" prefWidth="121.0" text="View Cart" />
+      <Button fx:id="addToCartButton" layoutX="371.0" layoutY="499.0" mnemonicParsing="false" onAction="#addToCart" text="Add To Cart" />
+      <Button fx:id="showProductInfoButton" layoutX="277.0" layoutY="499.0" mnemonicParsing="false" onAction="#showProductInfo" text="Show Info" />
+      <RadioButton fx:id="car1Radio" layoutX="15.0" layoutY="499.0" mnemonicParsing="false" onAction="#carSelection" selected="true" text="BMW">
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="car2Radio" layoutX="87.0" layoutY="499.0" mnemonicParsing="false" onAction="#carSelection" text="Audi" toggleGroup="$group1" />
+      <TextArea fx:id="productTextArea" layoutX="480.0" layoutY="492.0" prefHeight="85.0" prefWidth="402.0" />
+      <ImageView fx:id="logoImageView" fitHeight="67.0" fitWidth="152.0" layoutX="25.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

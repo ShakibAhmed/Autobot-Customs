@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="loginAnchor" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autobot.customs.FXMLProductSelectionController">
+   <children>
+      <Label layoutX="64.0" layoutY="14.0" text="Administrator Login">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="59.0" layoutY="169.0" promptText="Username" />
+      <Button fx:id="loginConfirmButton" alignment="CENTER" layoutX="120.0" layoutY="259.0" mnemonicParsing="false" onAction="#showAdminOptions" text="Login" />
+      <PasswordField fx:id="passwordField" layoutX="59.0" layoutY="210.0" promptText="Password" />
+      <Label fx:id="loginErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="315.0" text="Username/Password Incorrect" textFill="#f50000" visible="false" />
+      <ImageView fx:id="imageView1" disable="true" fitHeight="1.0" fitWidth="1.0" layoutX="55.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="logoImageView" fitHeight="1.0" fitWidth="1.0" layoutX="380.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

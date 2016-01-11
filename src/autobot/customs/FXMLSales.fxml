@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="productOptionsAnchor" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autobot.customs.FXMLProductSelectionController">
+   <children>
+       <TableView fx:id="salesTable" layoutX="10.0" layoutY="28.0" prefHeight="307.0" prefWidth="580.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="28.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="72.0" text="ID" />
+          <TableColumn fx:id="custNameCol" prefWidth="93.0" text="Name" />
+            <TableColumn fx:id="addressCol" prefWidth="65.0" text="Address" />
+            <TableColumn fx:id="phoneCol" prefWidth="50.0" text="Phone" />
+            <TableColumn fx:id="cardTypeCol" prefWidth="64.0" text="Card Type" />
+            <TableColumn fx:id="cardNumberCol" prefWidth="89.0" text="Card Number" />
+            <TableColumn fx:id="cardExpCol" minWidth="0.0" prefWidth="83.0" text="Card Expiration" />
+            <TableColumn fx:id="secCodeCol" prefWidth="70.0" text="Security Code" />
+            <TableColumn fx:id="cartDetailsCol" prefWidth="89.0" text="Cart Details" />
+            <TableColumn fx:id="cartTotalCol" prefWidth="75.0" text="Cart Total" />
+            <TableColumn fx:id="timeCol" prefWidth="75.0" text="Time" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageView1" fitHeight="1.0" fitWidth="1.0" layoutX="380.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="logoImageView" fitHeight="1.0" fitWidth="1.0" layoutX="380.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="383.0" layoutY="4.0" text="Sales" />
+      <Button fx:id="loadSales1Button" layoutX="10.0" layoutY="355.0" mnemonicParsing="false" onAction="#loadSales1" text="Load Sales" />
+   </children>
+</AnchorPane>
